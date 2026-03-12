@@ -18,7 +18,7 @@ export default defineConfig(({ mode }: { mode: string }) => ({
       "@/": resolve(__dirname, "./src"),
     },
   },
-  base: '/',
+  base: mode === 'production' ? '/' : '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
@@ -28,5 +28,6 @@ export default defineConfig(({ mode }: { mode: string }) => ({
         manualChunks: undefined,
       },
     },
+    assetsInclude: ['**/*.css', '**/*.js'],
   },
 }));
