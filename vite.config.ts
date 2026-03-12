@@ -18,7 +18,7 @@ export default defineConfig(({ mode }: { mode: string }) => ({
       "@/": resolve(__dirname, "./src"),
     },
   },
-  base: mode === 'production' ? '/Ararakshi/' : '/',
+  base: '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
