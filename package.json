@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.14",
